@@ -1,1 +1,44 @@
+📖 Theoretical Background
+🔒 Cybersecurity in Autonomous Vehicles
+Autonomous vehicles rely on interconnected sensors (speed, throttle, brake, GPS, RPM). These systems are vulnerable to cyberattacks such as:
+DoS (Denial of Service) → disrupts communication channels.
+GPS Spoofing → manipulates navigation data.
+Replay/Fabrication Attacks → inject false sensor values.
+Fuzzy Attacks → random, unpredictable input signals.
+Intrusion detection systems (IDS) use machine learning + fuzzy logic to classify normal vs. abnormal behavior.
+
+🌀 Role of 3D Plots
+Axes: Speed (X), Throttle (Y), Brake (Z).
+Color coding: Represents detection regions (normal vs. attack).
+Purpose: Visualize how combinations of driving parameters cluster into safe vs. suspicious zones.
+This helps stakeholders see anomalies at a glance — for example, unusual throttle + brake combinations at high speed may indicate malicious input.
+
+📊 Waveform Analysis
+Your multi‑panel plots show how different attacks distort sensor signals over time:
+Normal signals remain stable.
+Attacks introduce spikes, drops, or irregular oscillations.
+Comparing multiple parameters (speed, brake, throttle, RPM) reveals attack fingerprints.
+
+🎯 Insights & Results
+Cluster separation in 3D space → ML model successfully distinguishes normal vs. attack states.
+Waveform deviations → Each attack type leaves a unique signature, useful for training IDS.
+Protocol comparison (FQAR vs RCBA) → Shows trade‑offs in packet delivery and delay, linking network resilience to vehicle safety.
+
+🚀 Recruiter Note
+This project demonstrates:
+Advanced ML‑driven anomaly detection.
+Strong data visualization skills (2D + 3D).
+Ability to connect theory with practical insights for real‑world cybersecurity.
+
+🎯 Insights for README
+Add a section like this:
+
+🧠 Machine Learning Approach
+This project applies ML-based intrusion detection to autonomous vehicle telemetry:
+Sequential models (LSTM) capture time-based anomalies in speed, throttle, and RPM.
+Residual networks (ResNet) extract deep features from sensor signals.
+Fuzzy logic + ML hybrid improves classification of unpredictable attacks.
+Visualization: 3D scatter plots and multi-panel waveforms illustrate how ML distinguishes normal driving from cyberattacks.
+Result: The ML model achieves high detection accuracy, with clear separation of attack vs. normal states in visual plots.
+
 
